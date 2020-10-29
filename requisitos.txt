@@ -1,0 +1,29 @@
+Requisitos Funcionais:
+
+	1. Deve ter 3 botões (1, +, =);
+	
+	2. Deve conseguir disponibilizar números no display;
+	
+	3. Deve conseguir somar números e exibir no display o resultado correto;
+	
+	4. Caracteres numéricos de 0 a 9;
+	
+	5. Operadores matemáticos  +,  -,  *,  /;
+	
+	6. Botões para cada caracter e operadores;
+	
+	7. Display para exibir a operação e resultado;
+	
+	8. Precisão de 5 casas decimais;
+	
+	9. Botão reset.
+	
+Requisitos Não Funcionais:
+
+	1. Deve ter todo o código versionado com Git/Github;
+	
+	2. Todos os alunos devem criar um repositório e clonar o projeto para suas máquinas;
+	
+	3. Layout estilizado em  css;
+	
+	4. Aplicar DOM para linkar os elementos HTML ao Javascript.
