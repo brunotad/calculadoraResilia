@@ -12,11 +12,16 @@ function clica(botao) {
         return;
     } else {
         display.value = valor + botao.value //rescreve o que já tinha e coloca+1
-
     }
 }
 
+//fazer calculo 
 function calculo(i) {
     let res = eval(i)
     teste.innerText = res
+}
+
+//limpar tela
+function reset() {
+
 }
