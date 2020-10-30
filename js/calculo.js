@@ -1,11 +1,22 @@
 //utilizando name consegue chamar direto o elemento e sua cadeia
 //console.log(document.calcula)
-
 var display = document.getElementById("display")
-var botao = document.querySelector('.botao')
+var res = document.getElementById('resultado')
+var teste = document.getElementById('teste')
 
-botao.addEventListener('click', function(e) {
-    e.preventDefault();
-    display.value = "1"
+function clica(botao) {
+    let valor;
+    valor = display.value //guarda variavel
+    if (botao.value === "=") {
+        calculo(valor);
+        return;
+    } else {
+        display.value = valor + botao.value //rescreve o que já tinha e coloca+1
 
-})
+    }
+}
+
+function calculo(i) {
+    let res = eval(i)
+    teste.innerText = res
+}
