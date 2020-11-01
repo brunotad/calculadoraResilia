@@ -14,42 +14,45 @@
             <h1>Calculadora</h1>
         </header>
         <main>
-            <form name="calcula">
-                <div>
-                    <input type="text" name="display" id="display">
-                </div>
-                <div>
-                    <button class="botao">1</button>
-                    <button class="botao">2</button>
-                    <button>3</button>
-                    <button>-</button>
-                </div>
-                <div>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>+</button>
-                </div>
-                <div>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>*</button>
-                </div>
-                <div>
-                    <button>0</button>
-                    <button>=</button>
-                    <button>C</button>
-                    <button>/</button>
-                </div>
+            <form action="" name="calcula"></form>
+            <div>
+                <input type="text" name="display" id="display">
+            </div>
+            <div>
+                <button value="1" onclick="clica(this)">1</button>
+                <button value="2" onclick="clica(this)">2</button>
+                <button value="3" onclick="clica(this)">3</button>
+                <button value="-" onclick="clica(this)">-</button>
+            </div>
+            <div>
+                <button value="4" onclick="clica(this)">4</button>
+                <button value="5" onclick="clica(this)">5</button>
+                <button value="6" onclick="clica(this)">6</button>
+                <button value="+" onclick="clica(this)">+</button>
+            </div>
+            <div>
+                <button value="7" onclick="clica(this)">7</button>
+                <button value="8" onclick="clica(this)">8</button>
+                <button value="9" onclick="clica(this)">9</button>
+                <button value="*" onclick="clica(this)">*</button>
+            </div>
+            <div>
+                <button value="0" onclick="clica(this)">0</button>
+                <button value="=" onclick="clica(this)" id="resultado">=</button>
+                <button type="reset">c</button>
+                <button value="/" onclick="clica(this)">/</button>
+            </div>
             </form>
+            <div id="teste">
+                teste
+            </div>
         </main>
         <footer>
         </footer>
 
     </div>
 
-    <script type="text/javascript" src="js/calculo.js"></script>
+    <script type=" text/javascript " src="js/calculo.js "></script>
 </body>
 
 =======
