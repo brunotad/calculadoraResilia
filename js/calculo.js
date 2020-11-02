@@ -65,7 +65,7 @@ function calculo(x) {
                 break;
             }
     }
-
+    //resltado fora do padrao
     if (result > 0 || result < 0)
         return display.textContent = result
     return display.textContent = x
