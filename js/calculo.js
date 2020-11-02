@@ -27,44 +27,47 @@ function reset() {
 // }
 
 function calculo(x) {
-    if (!x != null) {
 
 
-        let arr = [] = x.split(""); //transforma a string valor em um array
-        for (let i = 0; i < x.length; i++) {
-            if (x[i] === "-" || x[i] === "+" || x[i] === "*" || x[i] === "/") {
-                var posicaoOperador = x.indexOf(x[i]); //guarda a posicao do operador aritmetico
-                var operador = x[i] //guarda o operador aritmetico
-            }
+
+    let arr = [] = x.split(""); //transforma a string valor em um array
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] === "-" || x[i] === "+" || x[i] === "*" || x[i] === "/") {
+            var posicaoOperador = x.indexOf(x[i]); //guarda a posicao do operador aritmetico
+            var operador = x[i] //guarda o operador aritmetico
         }
-        let guardaArrNum1 = arr.splice(0, posicaoOperador); //guarda os numeros do array que vem antes do operador aritmetico
-        let num1 = guardaArrNum1.join(""); //concatena os numeros do array que vem antes do operador aritmetico
-        let guardaArrNum2 = arr.splice(0, 1); //remove o operador aritmetico
-        let num2 = arr.join(""); //concatena os numeros do array que vem depois do operador aritmetico
-        var result = 0;
-        //faz trata as strings e faz o calculo
-        switch (operador) {
-            case "-":
-                {
-                    result = parseFloat(num1) - parseFloat(num2);
-                    break;
-                }
-            case "+":
-                {
-                    result = parseFloat(num1) + parseFloat(num2);
-                    break;
-                }
-            case "*":
-                {
-                    result = parseFloat(num1) * parseFloat(num2);
-                    break;
-                }
-            case "/":
-                {
-                    result = parseFloat(num1) / parseFloat(num2);
-                    break;
-                }
-        }
-        return display.textContent = result
     }
+    let guardaArrNum1 = arr.splice(0, posicaoOperador); //guarda os numeros do array que vem antes do operador aritmetico
+    let num1 = guardaArrNum1.join(""); //concatena os numeros do array que vem antes do operador aritmetico
+    let guardaArrNum2 = arr.splice(0, 1); //remove o operador aritmetico
+    let num2 = arr.join(""); //concatena os numeros do array que vem depois do operador aritmetico
+    var result = 0;
+    //faz trata as strings e faz o calculo
+    switch (operador) {
+        case "-":
+            {
+                result = parseFloat(num1) - parseFloat(num2);
+                break;
+            }
+        case "+":
+            {
+                result = parseFloat(num1) + parseFloat(num2);
+                break;
+            }
+        case "*":
+            {
+                result = parseFloat(num1) * parseFloat(num2);
+                break;
+            }
+        case "/":
+            {
+                result = parseFloat(num1) / parseFloat(num2);
+                break;
+            }
+    }
+
+    if (result > 0 || result < 0)
+        return display.textContent = result
+    return display.textContent = x
+
 }
