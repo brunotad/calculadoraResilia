@@ -1,0 +1,73 @@
+* {
+    font-family: 'Trispace', sans-serif;
+    font-size: 20pt;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trispace', sans-serif;
+    font-size: 20pt;
+    margin: 10px auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 80px;
+    background-color: grey;
+    width: 400px;
+    height: 400px;
+    border-radius: 45px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.button-area {
+    padding-top: 50px;
+    width: 310px;
+    margin: auto;
+}
+
+.button-area button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#linha {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.number {
+    background-color: #4b0082;
+    color: #ffffff;
+}
+
+.operadores {
+    background-color: yellowgreen;
+    color: #ffffff;
+}
+
+.result-reset {
+    background-color: #495af7;
+    color: #ffffff;
+}

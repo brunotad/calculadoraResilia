@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculadora</title>
 </head>
 
@@ -13,42 +15,43 @@
             <h1>Calculadora</h1>
         </header>
         <main>
-            <form action=""></form>
-            <div>
-                <input type="text" id="display">
-            </div>
-            <div>
-                <button value="1" onclick="clica(this)">1</button>
-                <button value="2" onclick="clica(this)">2</button>
-                <button value="3" onclick="clica(this)">3</button>
-                <button value="-" onclick="clica(this)">-</button>
-            </div>
-            <div>
-                <button value="4" onclick="clica(this)">4</button>
-                <button value="5" onclick="clica(this)">5</button>
-                <button value="6" onclick="clica(this)">6</button>
-                <button value="+" onclick="clica(this)">+</button>
-            </div>
-            <div>
-                <button value="7" onclick="clica(this)">7</button>
-                <button value="8" onclick="clica(this)">8</button>
-                <button value="9" onclick="clica(this)">9</button>
-                <button value="*" onclick="clica(this)">*</button>
-            </div>
-            <div>
-                <button value="0" onclick="clica(this)">0</button>
-                <button value="=" onclick="clica(this)" id="resultado">=</button>
-                <button onclick="reset()">c</button>
-                <button value="/" onclick="clica(this)">/</button>
-            </div>
-            </form>
-            <div id="teste">
-                teste
+            <div class="container">
+                <div id="display" class="display">
+                </div>
+                <div class="button-area">
+                    <div class="linha">
+                        <button class="number" id="bt1">1</button>
+                        <button class="number" id="bt2">2</button>
+                        <button class="number" id="bt3">3</button>
+                        <button class="operadores" id="sub">-</button>
+                    </div>
+                    <div class="linha">
+                        <button class="number" id="bt4">4</button>
+                        <button class="number" id="bt5">5</button>
+                        <button class="number" id="bt6">6</button>
+                        <button class="operadores" id="soma">+</button>
+                    </div>
+                    <div class="linha">
+                        <button class="number" id="bt7">7</button>
+                        <button class="number" id="bt8">8</button>
+                        <button class="number" id="bt9">9</button>
+                        <button class="operadores" id="mult">*</button>
+                    </div>
+                    <div class="linha">
+                        <button class="number" id="bt0">0</button>
+                        <button class="result-reset" id="resultado">=</button>
+                        <button class="result-reset" id="reset">C</button>
+                        <button class="operadores" id="divsao">/</button>
+
+                    </div>
+
+                </div>
             </div>
         </main>
         <footer>
         </footer>
     </div>
+    <script src="js/dom.js"></script>
     <script type=" text/javascript " src="js/calculo.js "></script>
 </body>
 
