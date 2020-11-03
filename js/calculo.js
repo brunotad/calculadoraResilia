@@ -5,9 +5,12 @@ display.textContent = valor
 //verificando e concatenando string
 function clica(botao) {
     valor = display.textContent += botao
-        // if (botao == "E") {
-        //     apagar(valor)
-        // }
+    if (valor[0] === ".") {
+        valor = display.textContent = "0."
+    }
+    if (botao == "E") {
+        apagar(valor)
+    }
 
 }
 
@@ -17,14 +20,14 @@ function reset() {
 }
 
 //apaga um elemento de cada vez
-// function apagar(valor) {
-//     var res = valor.split('')
-//     res.pop()
-//     res.pop()
-//     var string = res.join('')
-//     return display.textContent = string
+function apagar(valor) {
+    var res = valor.split('')
+    res.pop()
+    res.pop()
+    var string = res.join('')
+    return display.textContent = string
 
-// }
+}
 
 function calculo(x) {
     let arr = [] = x.split(""); //transforma a string valor em um array
@@ -63,8 +66,8 @@ function calculo(x) {
             }
     }
     //resltado fora do padrao
-    if (result > 0 || result < 0)
-        return display.textContent = result
-    return display.textContent = x
+
+    return display.textContent = result
+
 
 }

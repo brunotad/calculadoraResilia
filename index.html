@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Calculadora</title>
 </head>
 
@@ -18,31 +18,33 @@
             <div class="container">
                 <textarea id="display" class="display" cols="30" rows="10" readonly="true"></textarea>
                 <div class="button-area">
-                    <div class="linha">
+                    <div class="linha" id="linha_1">
 
                         <button class="number" id="bt1">1</button>
                         <button class="number" id="bt2">2</button>
                         <button class="number" id="bt3">3</button>
+                        <button class="result-reset" id="reset">C</button>
                         <button class="operadores" id="sub">-</button>
                     </div>
-                    <div class="linha">
+                    <div class="linha" id="linha_2">
                         <button class="number" id="bt4">4</button>
                         <button class="number" id="bt5">5</button>
                         <button class="number" id="bt6">6</button>
+                        <button class="simbolos" id="apaga"><img src="./img/seta_left.svg" alt=""></button>
                         <button class="operadores" id="soma">+</button>
                     </div>
-                    <div class="linha">
+                    <div class="linha" id="linha_3">
                         <button class="number" id="bt7">7</button>
                         <button class="number" id="bt8">8</button>
                         <button class="number" id="bt9">9</button>
+                        <button class="simbolos" id="ponto">.</button>
                         <button class="operadores" id="mult">x</button>
                     </div>
-                    <div class="linha">
+                    <div class="linha" id="linha_4">
                         <button class="number" id="bt0">0</button>
-                        <button class="result-reset" id="reset">C</button>
                         <button class="result-reset" id="resultado">=</button>
-                        <button class="operadores" id="divsao"><img src="img/divisao.png" alt=""></button>
-
+                        <button class="simbolos" id="porcent">%</button>
+                        <button class="operadores" id="divsao"><img src="./img/divisao.png" alt=""></button>
                     </div>
 
                 </div>
@@ -51,8 +53,8 @@
         <footer>
         </footer>
     </div>
-    <script src="js/dom.js"></script>
-    <script src="js/calculo.js "></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/calculo.js "></script>
 </body>
 
 </html>

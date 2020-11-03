@@ -8,7 +8,7 @@ h1 {
     justify-content: center;
     font-family: 'Trispace', sans-serif;
     font-size: 20pt;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 main {
@@ -19,7 +19,7 @@ main {
 .container {
     padding: 30px;
     background-color: #0a0a0afa;
-    width: 300px;
+    width: 350px;
     height: 350px;
     border-radius: 13px;
     border: 1px solid rgba(255, 255, 255, 0.884);
@@ -29,17 +29,18 @@ main {
     display: flex;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.952);
-    width: 300px;
+    width: 320px;
     height: 35px;
     border-radius: 7px;
     border: 1px solid rgba(0, 0, 0, 0.801);
     text-align: center;
     padding-top: 10px;
+    margin: auto;
 }
 
 .button-area {
     padding-top: 25px;
-    width: 310px;
+    width: 330px;
     margin: auto;
 }
 
@@ -51,9 +52,18 @@ main {
     margin: 5px;
 }
 
-#linha {
+.linha {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+#linha_4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#linha_4 #resultado {
+    width: 130px;
 }
 
 .number {
@@ -66,7 +76,8 @@ main {
     color: #ffffff;
 }
 
-.result-reset {
+.result-reset,
+.simbolos {
     background-color: #03c4a1;
     color: #ffffff;
 }
