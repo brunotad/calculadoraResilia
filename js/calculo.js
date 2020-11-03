@@ -11,6 +11,9 @@ function clica(botao) {
     if (botao == "E") {
         apagar(valor)
     }
+    if (botao == "/100") {
+        calculo(valor)
+    }
 
 }
 
