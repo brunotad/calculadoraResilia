@@ -27,9 +27,6 @@ function reset() {
 // }
 
 function calculo(x) {
-
-
-
     let arr = [] = x.split(""); //transforma a string valor em um array
     for (let i = 0; i < x.length; i++) {
         if (x[i] === "-" || x[i] === "+" || x[i] === "*" || x[i] === "/") {
