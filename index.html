@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora</title>
-    </head>
-    <body>
-        <div class="corpo">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="corpo">
         <header>
             <h1>Calculadora</h1>
         </header>
-
         <main>
+            <div class="container">
+                <textarea id="display" class="display" cols="30" rows="10" readonly="true"></textarea>
+                <div class="button-area">
+                    <div class="linha" id="linha_1">
 
-            <div id="display">
-                display
-            </div>
-            
-            <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>-</button>
-            </div>
-            <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
-            </div>
-            <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-            </div>
-            <div>
-                <button>0</button>
-                <button>=</button>
-                <button>C</button>
-                <button>/</button>
-            </div>
+                        <button class="number" id="bt1">1</button>
+                        <button class="number" id="bt2">2</button>
+                        <button class="number" id="bt3">3</button>
+                        <button class="result-reset" id="reset">C</button>
+                        <button class="operadores" id="sub">-</button>
+                    </div>
+                    <div class="linha" id="linha_2">
+                        <button class="number" id="bt4">4</button>
+                        <button class="number" id="bt5">5</button>
+                        <button class="number" id="bt6">6</button>
+                        <button class="simbolos" id="apaga"><img src="./img/seta_left.svg" alt=""></button>
+                        <button class="operadores" id="soma">+</button>
+                    </div>
+                    <div class="linha" id="linha_3">
+                        <button class="number" id="bt7">7</button>
+                        <button class="number" id="bt8">8</button>
+                        <button class="number" id="bt9">9</button>
+                        <button class="simbolos" id="ponto">.</button>
+                        <button class="operadores" id="mult">x</button>
+                    </div>
+                    <div class="linha" id="linha_4">
+                        <button class="number" id="bt0">0</button>
+                        <button class="result-reset" id="resultado">=</button>
+                        <button class="simbolos" id="porcent">%</button>
+                        <button class="operadores" id="divsao"><img src="./img/divisao.png" alt=""></button>
+                    </div>
 
+                </div>
+            </div>
         </main>
-
         <footer>
-
         </footer>
-            
-        </div>
-    </body>
+    </div>
+    <script src="./js/dom.js"></script>
+    <script src="./js/calculo.js "></script>
+</body>
+
 </html>

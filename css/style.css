@@ -1,0 +1,87 @@
+* {
+    font-family: 'Trispace', sans-serif;
+    font-size: 20pt;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trispace', sans-serif;
+    font-size: 20pt;
+    margin: 20px auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 30px;
+    background-color: #0a0a0afa;
+    width: 350px;
+    height: 350px;
+    border-radius: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.884);
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.952);
+    width: 320px;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.801);
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.button-area {
+    padding-top: 25px;
+    width: 330px;
+    margin: auto;
+}
+
+.button-area button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.13);
+    margin: 5px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+#linha_4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#linha_4 #resultado {
+    width: 130px;
+}
+
+.number {
+    background-color: #590995;
+    color: #ffffff;
+}
+
+.operadores {
+    background-color: #c62a88;
+    color: #ffffff;
+}
+
+.result-reset,
+.simbolos {
+    background-color: #03c4a1;
+    color: #ffffff;
+}
+
+img {
+    height: 50%;
+}
