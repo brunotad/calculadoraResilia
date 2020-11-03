@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">    
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <div class="corpo">
-        
         <header>
             <h1>Calculadora</h1>
         </header>
-        
         <main>
-            
             <div class="container">
-                <div class="display">
-                    display
-                </div>
+                <textarea id="display" class="display" cols="30" rows="10" readonly="true"></textarea>
                 <div class="button-area">
-                    <div id="linha1">
-                        <button class="number">1</button>
-                        <button class="number">2</button>
-                        <button class="number">3</button>
-                        <button class="operadores">-</button>
+                    <div class="linha" id="linha_1">
+
+                        <button class="number" id="bt1">1</button>
+                        <button class="number" id="bt2">2</button>
+                        <button class="number" id="bt3">3</button>
+                        <button class="result-reset" id="reset">C</button>
+                        <button class="operadores" id="sub">-</button>
                     </div>
-                    <div id="linha2">
-                        <button class="number">4</button>
-                        <button class="number">5</button>
-                        <button class="number">6</button>
-                        <button class="operadores">+</button>
+                    <div class="linha" id="linha_2">
+                        <button class="number" id="bt4">4</button>
+                        <button class="number" id="bt5">5</button>
+                        <button class="number" id="bt6">6</button>
+                        <button class="simbolos" id="retorno"><img src="./img/seta_left.svg" alt=""></button>
+                        <button class="operadores" id="soma">+</button>
                     </div>
-                    <div id="linha3">
-                        <button class="number">7</button>
-                        <button class="number">8</button>
-                        <button class="number">9</button>
-                        <button class="operadores">*</button>
+                    <div class="linha" id="linha_3">
+                        <button class="number" id="bt7">7</button>
+                        <button class="number" id="bt8">8</button>
+                        <button class="number" id="bt9">9</button>
+                        <button class="simbolos" id="ponto">.</button>
+                        <button class="operadores" id="mult">x</button>
                     </div>
-                    <div id="linha4">
-                        <button class="result-reset">C</button>
-                        <button class="number">0</button>
-                        <button class="result-reset">=</button>
-                        <button class="operadores">/</button>
+                    <div class="linha" id="linha_4">
+                        <button class="number" id="bt0">0</button>
+                        <button class="result-reset" id="resultado">=</button>
+                        <button class="simbolos" id="ponto">%</button>
+                        <button class="operadores" id="divsao"><img src="img/divisao.png" alt=""></button>
                     </div>
+
                 </div>
             </div>
-            
         </main>
-        
         <footer>
-            
         </footer>
-        
     </div>
+    <script src="js/dom.js"></script>
+    <script src="js/calculo.js "></script>
 </body>
+
 </html>
