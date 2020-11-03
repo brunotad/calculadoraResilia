@@ -14,8 +14,10 @@ onload = () => {
     document.querySelector('#mult').onclick = () => clica("*")
     document.querySelector('#bt0').onclick = () => clica(0)
     document.querySelector('#resultado').onclick = () => calculo(valor)
-        //document.querySelector('#btE').onclick = () => clica("E")
+    document.querySelector('#apaga').onclick = () => clica("E")
     document.querySelector('#divsao').onclick = () => clica("/")
     document.querySelector("#reset").onclick = () => reset()
-}
+    document.querySelector("#ponto").onclick = () => clica(".")
+    document.querySelector("#porcent").onclick = () => clica("/100")
 
+}

@@ -58,8 +58,8 @@ main {
 }
 
 #linha_4 {
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 #linha_4 #resultado {
